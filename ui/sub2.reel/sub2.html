@@ -13,10 +13,7 @@
         "overlay": {
             "prototype": "montage/ui/overlay.reel",
             "properties": {
-                "element": {"#": "overlay"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true"
+                "element": {"#": "overlay"}
             }
         },
         "subcomponent": {
@@ -24,12 +21,20 @@
             "properties": {
                 "element": {"#": "subcomponent"}
             }
+        },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "sub2"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Sub2">
+        <p data-montage-id="text"></p>
         <div data-montage-id="overlay">
             <div data-montage-id="subcomponent"></div>
         </div>
