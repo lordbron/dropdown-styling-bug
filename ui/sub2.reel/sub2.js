@@ -12,5 +12,10 @@ exports.Sub2 = Component.specialize(/** @lends Sub2# */ {
         value: function Sub2() {
             this.super();
         }
+    },
+    handleDisplayOverlay: {
+        value: function (event) {
+            this.templateObjects.overlay.show();
+        }
     }
 });
