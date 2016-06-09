@@ -36,10 +36,7 @@
         "sub1": {
             "prototype": "ui/sub1.reel",
             "properties": {
-                "element": {"#": "sub1"},
-                "contenteditable": "true",
-                "dir": "ltr",
-                "draggable": "true"
+                "element": {"#": "sub1"}
             }
         },
         "sub2": {
@@ -64,8 +61,8 @@
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <button data-montage-id="button"></button>
         <div data-montage-id="substitution">
-            <div data-montage-id="sub1"></div>
-            <div data-montage-id="sub2"></div>
+            <div data-montage-id="sub1" data-arg="sub1"></div>
+            <div data-montage-id="sub2" data-arg="sub2"></div>
         </div>
     </div>
 </body>
