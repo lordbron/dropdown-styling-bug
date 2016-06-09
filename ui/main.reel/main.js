@@ -10,7 +10,7 @@ var Component = require("montage/ui/component").Component;
 exports.Main = Component.specialize(/** @lends Main# */ {
     templateDidLoad: {
         value: function () {
-            this.substitution.switchValue = "sub1";
+            //this.substitution.switchValue = "sub1";
         }
     },
     handleButtonAction: {
