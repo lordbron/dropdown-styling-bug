@@ -8,6 +8,11 @@ var Component = require("montage/ui/component").Component;
  * @extends Component
  */
 exports.Main = Component.specialize(/** @lends Main# */ {
+    templateDidLoad: {
+        value: function () {
+            this.substitution.switchValue = "";
+        }
+    },
     handleButtonAction: {
         value: function (event) {
             this.application.dispatchEventNamed("displayOverlay",true, true);
