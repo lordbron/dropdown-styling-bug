@@ -11,7 +11,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
     handleButtonAction: {
         value: function (event) {
             this.application.dispatchEventNamed("displayOverlay",true, true);
-            this.templateObjects.overlay.show();
         }
     }
 });
