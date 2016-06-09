@@ -37,6 +37,21 @@
                 "draggable": "true"
             }
         },
+        "sub1": {
+            "prototype": "ui/sub1.reel",
+            "properties": {
+                "element": {"#": "sub1"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
+        },
+        "sub2": {
+            "prototype": "ui/sub2.reel",
+            "properties": {
+                "element": {"#": "sub2"}
+            }
+        },
         "subcomponent": {
             "prototype": "ui/subcomponent.reel",
             "properties": {
@@ -58,7 +73,10 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <button data-montage-id="button"></button>
-        <div data-montage-id="substitution"></div>
+        <div data-montage-id="substitution">
+            <div data-montage-id="sub1"></div>
+            <div data-montage-id="sub2"></div>
+        </div>
         <div data-montage-id="overlay">
             <div data-montage-id="subcomponent"></div>
         </div>
