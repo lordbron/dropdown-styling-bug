@@ -42,6 +42,15 @@
             "properties": {
                 "element": {"#": "subcomponent"}
             }
+        },
+        "substitution": {
+            "prototype": "montage/ui/substitution.reel",
+            "properties": {
+                "element": {"#": "substitution"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            }
         }
     }
     </script>
@@ -49,6 +58,7 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <button data-montage-id="button"></button>
+        <div data-montage-id="substitution"></div>
         <div data-montage-id="overlay">
             <div data-montage-id="subcomponent"></div>
         </div>
