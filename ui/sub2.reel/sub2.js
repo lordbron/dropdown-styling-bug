@@ -11,6 +11,7 @@ exports.Sub2 = Component.specialize(/** @lends Sub2# */ {
     constructor: {
         value: function Sub2() {
             this.super();
+            this.application.addEventListener("displayOverlay", this, false);
         }
     },
     handleDisplayOverlay: {
